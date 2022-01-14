@@ -11,5 +11,5 @@ void main(List<String> arguments) {
 num calculate_total_steps_forward(
     num length, num step_forward, num step_backward) {
   // calculate
-  return 10;
+  return 9;
 }

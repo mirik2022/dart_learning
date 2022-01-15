@@ -1,15 +1,20 @@
 void main(List<String> arguments) {
-  num length = 22;
-  num step_forward = 3;
-  num step_backward = 1;
+  int length = 10;
+  int step_forward = 3;
+  int fall_backward = 1;
 
-  num total_steps =
-      calculate_total_steps_forward(length, step_forward, step_backward);
+  var total_steps =
+      calculate_total_steps_forward(length, step_forward, fall_backward);
   print(total_steps);
 }
 
-num calculate_total_steps_forward(
-    num length, num step_forward, num step_backward) {
+calculate_total_steps_forward(int length, int step_forward, int fall_backward) {
   // calculate
-  return 9;
+  var t = 0;
+  var leg = [];
+  var g = t + step_forward - fall_backward;
+  for (var i = 0;
+      i < length;
+      i = i + step_forward - fall_backward, leg.add(1)) {}
+  print(leg.length);
 }

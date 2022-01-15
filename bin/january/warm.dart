@@ -10,11 +10,9 @@ void main(List<String> arguments) {
 
 calculate_total_steps_forward(int length, int step_forward, int fall_backward) {
   // calculate
-  var t = 0;
-  var leg = [];
-  var g = t + step_forward - fall_backward;
-  for (var i = 0;
-      i < length;
-      i = i + step_forward - fall_backward, leg.add(1)) {}
-  print(leg.length);
+  var l = 0;
+  for (var i = 0; i < length; i = i + step_forward - fall_backward,) {
+    l = l + 1;
+  }
+  print(l);
 }

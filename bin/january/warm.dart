@@ -11,8 +11,13 @@ void main(List<String> arguments) {
 calculate_total_steps_forward(int length, int step_forward, int fall_backward) {
   // calculate
   var l = 0;
-  for (var i = 0; i < length; i = i + step_forward - fall_backward,) {
+  var p = 0;
+  while (p < length) {
+    p = p + step_forward;
     l = l + 1;
+    if (p < length) {
+      p = p - fall_backward;
+    }
+    print(l);
   }
-  print(l);
 }
